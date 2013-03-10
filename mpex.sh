@@ -4,5 +4,4 @@
 # usage example: ./mpex.sh BUY\|S.DICE\|40000
 # or: ./mpex.sh 'BUY|S.DICE|40000'
 # don't forget the "!" after your keyID.
-echo $* | gpg --clearsign -u yourkeyID! | gpg --armor -r F1B69921 --trust-model always --encrypt | curl -s --data-urlencode msg@- http://mpex.co | gpg -
-
+echo $* | gpg --clearsign -u yourkeyID! | gpg --armor -r F1B69921 --trust-model always --encrypt | curl -s --data-urlencode msg@- http://mpex.coinbr.com | gpg -
